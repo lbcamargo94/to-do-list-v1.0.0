@@ -77,3 +77,8 @@ function removerSelecionados() {
     }
 }
 removeSelecionado.addEventListener('click', removerSelecionados);
+// Função salvar tarefas
+function salvarTarefas() {
+    localStorage.setItem('tarefas', listaTarefas.innerHTML);
+}
+salvaTarefas.addEventListener('click', salvarTarefas);
