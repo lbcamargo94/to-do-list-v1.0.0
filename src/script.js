@@ -54,3 +54,10 @@ function adicionarTarefa() {
     }
 }
 criarTarefa.addEventListener('click', adicionarTarefa);
+// Função apagar tudo
+function apagaTudo() {
+    while (listaTarefas.firstChild) {
+        listaTarefas.removeChild(listaTarefas.firstChild);
+    }
+}
+limpaTudo.addEventListener('click', apagaTudo);
