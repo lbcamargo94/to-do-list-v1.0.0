@@ -1,0 +1,41 @@
+/* RESET CSS */
+
+html,
+body,
+div,
+span,
+figure,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ol,
+ul,
+li,
+header,
+main,
+article,
+footer,
+section,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 1;
+}
+
+/* VARIAVEL */
+
+/* TAG */
+
+/* ID */
+
+/* CLASS */
