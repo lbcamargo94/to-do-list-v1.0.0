@@ -80,6 +80,49 @@ label {
 }
 
 /* ID */
+#button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px auto;
+    margin-top: 30%;
+    width: 750px;
+}
+
+#criar-tarefa,
+#apaga-tudo,
+#remover-finalizados,
+#remover-selecionado,
+#salvar-tarefas,
+#mover-cima,
+#mover-baixo {
+    align-items: center;
+    border: outset;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    padding: 5px;
+    font-weight: bold;
+    margin: 2px;
+    transition: all 0.5s;
+    width: 100px;
+}
+
+#criar-tarefa:hover,
+#apaga-tudo:hover,
+#remover-finalizados:hover,
+#remover-selecionado:hover,
+#salvar-tarefas:hover,
+#mover-cima:hover,
+#mover-baixo:hover {
+    filter: drop-shadow(5px 2.5px 2.5px rgb(44, 44, 44));
+}
+
 #funcionamento,
 label {
     background-color: none;
