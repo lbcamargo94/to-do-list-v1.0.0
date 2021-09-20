@@ -61,3 +61,11 @@ function apagaTudo() {
     }
 }
 limpaTudo.addEventListener('click', apagaTudo);
+// Função remover finalizados
+function removerFinalizados() {
+    const element = document.querySelectorAll('.completed');
+    for (let ind = 0; ind < element.length; ind += 1) {
+        listaTarefas.removeChild(element[ind]);
+    }
+}
+removeFinalizado.addEventListener('click', removerFinalizados);
