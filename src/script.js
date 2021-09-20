@@ -82,3 +82,14 @@ function salvarTarefas() {
     localStorage.setItem('tarefas', listaTarefas.innerHTML);
 }
 salvaTarefas.addEventListener('click', salvarTarefas);
+// Função mover para cima
+function moverCima() {
+    const selecionado = document.querySelector('.selected');
+    if (selecionado !== null) {
+        const anteriorItem = selecionado.previousElementSibling;
+        if (anteriorItem !== null) {
+            listaTarefas.insertBefore(selecionado, anteriorItem);
+        }
+    }
+}
+moveCima.addEventListener('click', moverCima);
