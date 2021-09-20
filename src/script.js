@@ -15,3 +15,10 @@ function removerCor() {
         element[ind].classList.remove('selected');
     }
 }
+
+function adicionarCor(event) {
+    removerCor();
+    const element = event.target;
+    element.style.backgroundColor = 'rgb(128, 128, 128)';
+    element.classList.add('selected');
+}
