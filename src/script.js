@@ -31,3 +31,13 @@ function riscarItem(event) {
     }
     element.classList.add('completed');
 }
+// Função carregar página
+function carregarPagina() {
+    listaTarefas.innerHTML = localStorage.getItem('tarefas');
+    const element = document.querySelectorAll('.item-lista-tarefas');
+    for (let ind = 0; ind < element.length; ind += 1) {
+      element[ind].addEventListener('dblclick', riscarItem);
+      element[ind].addEventListener('click', adicionarCor);
+    }
+  }
+  carregarPagina();
