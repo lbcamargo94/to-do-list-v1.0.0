@@ -93,3 +93,14 @@ function moverCima() {
     }
 }
 moveCima.addEventListener('click', moverCima);
+// Função mover para baixo
+function moverBaixo() {
+    const selecionado = document.querySelector('.selected');
+    if (selecionado !== null) {
+        const proximoItem = selecionado.nextElementSibling;
+        if (proximoItem !== null) {
+            listaTarefas.insertBefore(proximoItem, selecionado);
+        }
+    }
+}
+moveBaixo.addEventListener('click', moverBaixo);
