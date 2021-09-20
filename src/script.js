@@ -36,8 +36,21 @@ function carregarPagina() {
     listaTarefas.innerHTML = localStorage.getItem('tarefas');
     const element = document.querySelectorAll('.item-lista-tarefas');
     for (let ind = 0; ind < element.length; ind += 1) {
-      element[ind].addEventListener('dblclick', riscarItem);
-      element[ind].addEventListener('click', adicionarCor);
+        element[ind].addEventListener('dblclick', riscarItem);
+        element[ind].addEventListener('click', adicionarCor);
     }
-  }
-  carregarPagina();
+}
+carregarPagina();
+// Função adicionar tarefa
+function adicionarTarefa() {
+    if (textoTarefa.value !== '') {
+        const novoItem = document.createElement('li');
+        novoItem.classList.add('item-lista-tarefas');
+        listaTarefas.appendChild(novoItem);
+        novoItem.addEventListener('dblclick', riscarItem);
+        novoItem.addEventListener('click', adicionarCor);
+        novoItem.innerHTML = textoTarefa.value;
+        textoTarefa.value = '';
+    }
+}
+criarTarefa.addEventListener('click', adicionarTarefa);
