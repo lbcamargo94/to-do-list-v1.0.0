@@ -35,7 +35,49 @@ textarea {
 /* VARIAVEL */
 
 /* TAG */
-
+body {
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 43, 21, 1) 2%, rgba(0, 139, 11, 1) 35%, rgba(255, 255, 255, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: outset;
+    border-radius: 15px;
+    display: bl;
+    margin: 20px;
+    padding: 20px;
+    width: 800px;
+  }
+  
+  main {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: outset;
+    border-radius: 15px;
+    margin: 20px;
+    width: 800px;
+    min-height: 600px;
+  }
+  
+  footer {
+    align-items: center;
+  }
+  
+  img {
+    height: 25px;
+    width: 25px;
+    margin: 1px;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
 /* ID */
 
 /* CLASS */
