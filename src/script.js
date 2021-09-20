@@ -69,3 +69,11 @@ function removerFinalizados() {
     }
 }
 removeFinalizado.addEventListener('click', removerFinalizados);
+// Função remover selecionados
+function removerSelecionados() {
+    const element = document.querySelectorAll('.selected');
+    for (let ind = 0; ind < element.length; ind += 1) {
+        listaTarefas.removeChild(element[ind]);
+    }
+}
+removeSelecionado.addEventListener('click', removerSelecionados);
