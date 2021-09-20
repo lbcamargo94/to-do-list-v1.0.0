@@ -23,13 +23,13 @@ article,
 footer,
 section,
 textarea {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 1;
 }
 
 /* VARIAVEL */
@@ -44,9 +44,9 @@ body {
     flex-direction: column;
     padding: 10px;
     text-align: center;
-  }
-  
-  header {
+}
+
+header {
     background-color: rgba(255, 255, 255, 0.5);
     border: outset;
     border-radius: 15px;
@@ -54,30 +54,70 @@ body {
     margin: 20px;
     padding: 20px;
     width: 800px;
-  }
-  
-  main {
+}
+
+main {
     background-color: rgba(255, 255, 255, 0.5);
     border: outset;
     border-radius: 15px;
     margin: 20px;
     width: 800px;
     min-height: 600px;
-  }
-  
-  footer {
+}
+
+footer {
     align-items: center;
-  }
-  
-  img {
+}
+
+img {
     height: 25px;
     width: 25px;
     margin: 1px;
-  }
-  
-  label {
+}
+
+label {
     margin-top: 10px;
-  }
+}
+
 /* ID */
+#funcionamento,
+label {
+    background-color: none;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 14pt;
+}
+
+#input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    width: 650px;
+}
+
+#lista-tarefas {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: start;
+}
+
+#texto-tarefa {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#title {
+    font-family: 'Architects Daughter', cursive;
+    text-decoration: none;
+    font-size: 22pt;
+    margin: 10px;
+}
 
 /* CLASS */
