@@ -1,5 +1,4 @@
 /* RESET CSS */
-
 html,
 body,
 div,
@@ -46,6 +45,10 @@ body {
     text-align: center;
 }
 
+footer {
+    align-items: center;
+}
+
 header {
     background-color: rgba(255, 255, 255, 0.5);
     border: outset;
@@ -56,19 +59,6 @@ header {
     width: 800px;
 }
 
-main {
-    background-color: rgba(255, 255, 255, 0.5);
-    border: outset;
-    border-radius: 15px;
-    margin: 20px;
-    width: 800px;
-    min-height: 600px;
-}
-
-footer {
-    align-items: center;
-}
-
 img {
     height: 25px;
     width: 25px;
@@ -77,6 +67,15 @@ img {
 
 label {
     margin-top: 10px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: outset;
+    border-radius: 15px;
+    margin: 20px;
+    width: 800px;
+    min-height: 600px;
 }
 
 /* ID */
@@ -164,3 +163,21 @@ label {
 }
 
 /* CLASS */
+.item-lista-tarefas {
+    border-radius: 2.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 14pt;
+    margin: 1px;
+    min-width: 250px;
+    padding: 5px;
+}
+
+.item-selecionado {
+    background-color: rgb(128, 128, 128);
+}
+
+.completed {
+    text-decoration: line-through solid black;
+}
