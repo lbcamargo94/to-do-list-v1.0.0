@@ -1,4 +1,5 @@
 /* RESET CSS */
+
 html,
 body,
 div,
@@ -34,6 +35,7 @@ textarea {
 /* VARIAVEL */
 
 /* TAG */
+
 body {
     align-items: center;
     background: linear-gradient(180deg, rgba(0, 43, 21, 1) 2%, rgba(0, 139, 11, 1) 35%, rgba(255, 255, 255, 1) 100%);
@@ -79,6 +81,7 @@ main {
 }
 
 /* ID */
+
 #button {
     align-items: center;
     display: flex;
@@ -89,7 +92,13 @@ main {
     width: 750px;
 }
 
-#criar-tarefa,
+#criar-tarefa {
+    height: 50px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
 #apaga-tudo,
 #remover-finalizados,
 #remover-selecionado,
@@ -112,7 +121,6 @@ main {
     width: 100px;
 }
 
-#criar-tarefa:hover,
 #apaga-tudo:hover,
 #remover-finalizados:hover,
 #remover-selecionado:hover,
@@ -136,7 +144,9 @@ label {
     margin: 10px auto;
     width: 650px;
 }
-
+#input-tarefa{
+    display: flex;
+}
 #lista-tarefas {
     cursor: pointer;
     display: flex;
@@ -148,11 +158,12 @@ label {
 }
 
 #texto-tarefa {
-    width: 80%;
-    margin: 10px auto;
+    margin: 10px 0;
+    height: 30px;
+    width: 100%;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
 }
 
 #title {
@@ -163,6 +174,7 @@ label {
 }
 
 /* CLASS */
+
 .item-lista-tarefas {
     border-radius: 2.5px;
     background-color: rgba(255, 255, 255, 0.5);

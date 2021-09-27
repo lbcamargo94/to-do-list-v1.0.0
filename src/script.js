@@ -19,7 +19,7 @@ function removerCor() {
 function adicionarCor(event) {
     removerCor();
     const element = event.target;
-    element.style.backgroundColor = 'rgb(128, 128, 128)';
+    element.style.backgroundColor = 'rgba(128, 128, 128, 0.5)';
     element.classList.add('selected');
 }
 // Função riscar item
