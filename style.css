@@ -88,8 +88,7 @@ main {
     flex-direction: row;
     justify-content: space-around;
     margin: 10px auto;
-    margin-top: 30%;
-    width: 750px;
+    width: 650px;
 }
 
 #criar-tarefa {
@@ -144,9 +143,11 @@ label {
     margin: 10px auto;
     width: 650px;
 }
-#input-tarefa{
+
+#input-tarefa {
     display: flex;
 }
+
 #lista-tarefas {
     cursor: pointer;
     display: flex;
@@ -192,4 +193,59 @@ label {
 
 .completed {
     text-decoration: line-through solid black;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* TAG */
+    header {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        min-height: 100%;
+    }
+
+    /* ID */
+    #button {
+        display: flex;
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    #input {
+        width: 80%;
+    }
+
+    #lista-tarefas {
+        box-sizing: border-box;
+        margin: 30px;
+        width: 100%;
+    }
+
+    #texto-tarefa {
+        width: 80%;
+        margin-left: 10px;
+    }
+
+    #apaga-tudo,
+    #remover-finalizados,
+    #remover-selecionado,
+    #salvar-tarefas,
+    #mover-cima,
+    #mover-baixo {
+        font-size: 0;
+        height: 20%;
+        width: 20%;
+    }
+
+    /* CLASS */
+    .item-lista-tarefas {
+        box-sizing: border-box;
+        min-width: 0;
+        width: 80%;
+        word-break: break-word;;
+    }
 }
